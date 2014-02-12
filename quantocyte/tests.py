@@ -84,7 +84,7 @@ class GridTestCase(TestCase):
         self.assertEqual(0, count)
 
         self.client.post(reverse('grid_crud'),
-                         {'oper': 'add', 'name': 'Vasya'})
+                         {'oper': 'add', 'name': name})
 
         count = Item.objects.filter(name=name).count()
         self.assertEqual(1, count)
