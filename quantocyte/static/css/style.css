@@ -1,0 +1,121 @@
+html, body {
+    font-family: Tahoma, "Lucida Grande", sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background: none repeat scroll 0 0 #111111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input, a, p, div, span {
+    font-size: 14px;
+}
+
+#container {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 9px;
+    margin: 15px auto;
+    padding: 0;
+    width: 770px;
+}
+
+#content_container {
+    height: 100%;
+    margin: 0 40px;
+    padding: 15px 0;
+    position: relative;
+}
+
+#header {
+    background: none repeat scroll 0 0 #B4252F;
+    color: #FF5555;
+    height: 30px;
+    padding: 0 5px;
+    border-radius: 9px 9px 0 0;
+    position: relative;
+}
+
+#navigation {
+    width: 100%;
+    text-align: right;
+    float: right;
+    padding-right: 10px;
+    padding-top: 5px;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+#navigation a {
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#edit_links {
+    float: right;
+    width: 20%;
+    text-align: right;
+}
+
+dl.inline {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+}
+dl.inline dt, dl.inline dd {
+    float: left;
+    padding: 5px;
+}
+
+dl.inline dd + dt, dl.inline dd + dd {
+    clear: left
+}
+
+dl.inline dd + dd {
+    float: none
+}
+
+dl.inline dt {
+    font-weight: bold;
+    width: 100px;
+}
+
+.clear {
+    clear: both;
+}
+
+img {
+    width: 100%;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+#form_container {
+     margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+#ajax_messages {
+    display: none;
+    border: 1px solid;
+}
+
+.ajax_message_success {
+    color: green;
+    border-color: green;
+}
+
+.ajax_message_errors {
+    color: red;
+    border-color: red;
+}

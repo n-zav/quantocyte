@@ -24,7 +24,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['quantocyte.dev', ]
 
 
 # Application definition
@@ -36,6 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'south',
+    'quantocyte',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -45,6 +47,25 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+)
+
+# List of callables that know how to import templates from various sources.
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+    #  'django.template.loaders.eggs.Loader',
+)
+
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'templates')
+    # Put strings here, like "/home/html/django_templates"
+    # or "C:/www/django/templates".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
+)
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
 )
 
 ROOT_URLCONF = 'quantocyte.urls'
